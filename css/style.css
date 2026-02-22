@@ -199,3 +199,56 @@ footer {
         width: 260px;
     }
 }
+
+/* ===== HERO SECTION ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 70px;
+}
+
+/* PROFILE IMAGE */
+.hero-image img {
+    width: 360px;                 /* BIG IMAGE */
+    max-width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 40px 60px rgba(0,0,0,0.35);
+}
+
+/* TEXT */
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 260px;
+    }
+}
+
